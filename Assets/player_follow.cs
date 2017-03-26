@@ -6,6 +6,7 @@ public class player_follow : MonoBehaviour {
 
     public Transform target;
     public float mSpeed = 0.01f;
+    public float res = 2f;
     Camera mycam;
 
 	// Use this for initialization
@@ -15,7 +16,6 @@ public class player_follow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        mycam.orthographicSize = (Screen.height / 100f) / 4f; //responsive scaling
 
         if (target)
         {
